@@ -12,8 +12,8 @@ namespace Empleado.EntityLayer
         public string NombreCompleto { get; set; }
         public Departamento Departamento { get; set; }
         public decimal Sueldo { get; set; }
-        public string FechaContrato { get; set; }
-        public string FechaNacimiento { get; set; }
+        public DateTime FechaContrato { get; set; }
+        public DateTime FechaNacimiento { get; set; }
         public int Edad { get; set; }
         public string Estatus { get; set; }
     }

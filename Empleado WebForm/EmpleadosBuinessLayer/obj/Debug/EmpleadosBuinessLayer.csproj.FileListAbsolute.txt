@@ -1,0 +1,11 @@
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\bin\Debug\EmpleadosBuinessLayer.dll
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\bin\Debug\EmpleadosBuinessLayer.pdb
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\bin\Debug\Empleado.DataLayer.dll
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\bin\Debug\Empleado.EntityLayer.dll
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\bin\Debug\Empleado.DataLayer.pdb
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\bin\Debug\Empleado.EntityLayer.pdb
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\obj\Debug\EmpleadosBuinessLayer.csproj.AssemblyReference.cache
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\obj\Debug\EmpleadosBuinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\obj\Debug\Empleado.5A8D9CF7.Up2Date
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\obj\Debug\EmpleadosBuinessLayer.dll
+C:\Users\eduar\Desktop\API\Empleado WebForm\EmpleadosBuinessLayer\obj\Debug\EmpleadosBuinessLayer.pdb

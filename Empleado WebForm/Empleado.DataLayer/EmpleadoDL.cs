@@ -8,6 +8,7 @@ using Empleado.EntityLayer;
 using System.Data;
 using System.Data.SqlClient;
 using EmpleadoEntity = Empleado.EntityLayer.Empleado;
+using System.Globalization;
 
 namespace Empleado.DataLayer
        {
@@ -36,11 +37,14 @@ namespace Empleado.DataLayer
                                 Departamento = new Departamento
                                 {
                                     IdDepartamento = Convert.ToInt32(dr["IdDepartamento"].ToString()),
-                                    Nombre = dr["Nombre"].ToString()
+                                    Nombre = dr["NombreDepartamento"].ToString()  // Aquí se ajusta para usar "NombreDepartamento"
                                 },
+
                                 Sueldo = (decimal)dr["Sueldo"],
-                                FechaContrato = dr["FechaContrato"].ToString(),
-                                FechaNacimiento = dr["fechaNacimiento"].ToString(),
+                                FechaContrato = DateTime.ParseExact(dr["FechaContrato"].ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture),
+                                FechaNacimiento = DateTime.ParseExact(dr["FechaNacimiento"].ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture),
+
+
                                 Edad = Convert.ToInt32(dr["Edad"].ToString()),
                                 Estatus = dr["Estatus"].ToString()
                             });
@@ -62,7 +66,7 @@ namespace Empleado.DataLayer
 
             using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
             {
-                SqlCommand cmd = new SqlCommand("select * from fn_empleado(@idEmpleado)", oConexion);
+                SqlCommand cmd = new SqlCommand("select * from fn_empleadoos(@idEmpleado)", oConexion);
                 cmd.Parameters.AddWithValue("@idEmpleado", IdEmpleado);
                 cmd.CommandType = CommandType.Text;
                 try
@@ -72,17 +76,20 @@ namespace Empleado.DataLayer
                     {
                         if (dr.Read())
                         {
-                            entidad.IdEmpleado = Convert.ToInt32(dr["IdEmpleado"].ToString());
+                            entidad.IdEmpleado = Convert.ToInt32(dr["IdEmpleado"]);
                             entidad.NombreCompleto = dr["NombreCompleto"].ToString();
                             entidad.Departamento = new Departamento
                             {
-                                IdDepartamento = Convert.ToInt32(dr["IdDepartamento"].ToString()),
-                                Nombre = dr["Nombre"].ToString()
+                                IdDepartamento = Convert.ToInt32(dr["IdDepartamento"]),
+                                Nombre = dr["NombreDepartamento"].ToString()
                             };
                             entidad.Sueldo = (decimal)dr["Sueldo"];
-                            entidad.FechaContrato = dr["FechaContrato"].ToString();
-                            entidad.FechaNacimiento = dr["fechaNacimiento"].ToString();
-                            entidad.Edad = Convert.ToInt32(dr["Edad"].ToString());
+
+                            // Convertir la fecha de contrato y fecha de nacimiento al tipo DateTime
+                            entidad.FechaContrato = (DateTime)dr["FechaContrato"];
+                            entidad.FechaNacimiento = (DateTime)dr["FechaNacimiento"];
+
+                            entidad.Edad = Convert.ToInt32(dr["Edad"]);
                             entidad.Estatus = dr["Estatus"].ToString();
                         }
                     }
@@ -96,27 +103,36 @@ namespace Empleado.DataLayer
         }
 
 
+
+
+
+
+
         public bool Crear(EmpleadoEntity entidad)
         {
             bool respuesta = false;
 
             using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
             {
-                SqlCommand cmd = new SqlCommand("sp_CrearEmpleado", oConexion);
-                cmd.Parameters.AddWithValue("@NombreCompleto", entidad.NombreCompleto);
-                cmd.Parameters.AddWithValue("@IdDepartamento", entidad.Departamento.IdDepartamento);
-                cmd.Parameters.AddWithValue("@Sueldo", entidad.Sueldo);
-                cmd.Parameters.AddWithValue("@FechaContrato", entidad.FechaContrato);
+                SqlCommand cmd = new SqlCommand("sp_CrearEmpleadoos", oConexion);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 // Calcula la edad a partir de la fecha de nacimiento
-                DateTime fechaNacimiento = Convert.ToDateTime(entidad.FechaNacimiento);
-                TimeSpan edadSpan = DateTime.Now - fechaNacimiento;
-
+                TimeSpan edadSpan = DateTime.Now - entidad.FechaNacimiento; // Utiliza la fecha de nacimiento proporcionada en la entidad
                 int edad = (int)(edadSpan.TotalDays / 365.25); // Aproximación de años
 
-                // Agrega el parámetro de la edad
+                // Formatea las fechas de contratación y de nacimiento
+                string fechaContratoFormateada = entidad.FechaContrato.ToString("yyyy-MM-dd");
+                string fechaNacimientoFormateada = entidad.FechaNacimiento.ToString("yyyy-MM-dd");
+
+                // Agregar parámetros
+                cmd.Parameters.AddWithValue("@NombreCompleto", entidad.NombreCompleto);
+                cmd.Parameters.AddWithValue("@IdDepartamento", entidad.Departamento.IdDepartamento);
+                cmd.Parameters.AddWithValue("@Sueldo", entidad.Sueldo);
+                cmd.Parameters.AddWithValue("@FechaContrato", fechaContratoFormateada);
+                cmd.Parameters.AddWithValue("@FechaNacimiento", fechaNacimientoFormateada);
                 cmd.Parameters.AddWithValue("@Edad", edad);
+                cmd.Parameters.AddWithValue("@Estatus", entidad.Estatus);
 
                 try
                 {
@@ -134,20 +150,32 @@ namespace Empleado.DataLayer
         }
 
 
+
+
+
         public bool Editar(EmpleadoEntity entidad)
         {
             bool respuesta = false;
 
             using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
+
             {
-                SqlCommand cmd = new SqlCommand("sp_EditarEmpleado", oConexion);
+                SqlCommand cmd = new SqlCommand("sp_EditarEmpleadooss", oConexion);
+
+                TimeSpan edadSpan = DateTime.Now - entidad.FechaNacimiento; // Utiliza la fecha de nacimiento proporcionada en la entidad
+                int edad = (int)(edadSpan.TotalDays / 365.25); // Aproximación de años
+
+                // Formatea las fechas de contratación y de nacimiento
+                string fechaContratoFormateada = entidad.FechaContrato.ToString("yyyy-MM-dd");
+                string fechaNacimientoFormateada = entidad.FechaNacimiento.ToString("yyyy-MM-dd");
+
                 cmd.Parameters.AddWithValue("@IdEmpleado", entidad.IdEmpleado);
                 cmd.Parameters.AddWithValue("@NombreCompleto", entidad.NombreCompleto);
                 cmd.Parameters.AddWithValue("@IdDepartamento", entidad.Departamento.IdDepartamento);
                 cmd.Parameters.AddWithValue("@Sueldo", entidad.Sueldo);
                 cmd.Parameters.AddWithValue("@FechaContrato", entidad.FechaContrato);
                 cmd.Parameters.AddWithValue("@FechaNacimiento", entidad.FechaNacimiento); // Asegúrate de que el tipo de dato de la columna coincida con el tipo de dato de FechaNacimiento en la clase Empleado
-                cmd.Parameters.AddWithValue("@Edad", entidad.Edad); // Asegúrate de que el tipo de dato de la columna coincida con el tipo de dato de Edad en la clase Empleado
+                cmd.Parameters.AddWithValue("@Edad", edad); // Asegúrate de que el tipo de dato de la columna coincida con el tipo de dato de Edad en la clase Empleado
                 cmd.Parameters.AddWithValue("@Estatus", entidad.Estatus);
                 cmd.CommandType = CommandType.StoredProcedure;
 

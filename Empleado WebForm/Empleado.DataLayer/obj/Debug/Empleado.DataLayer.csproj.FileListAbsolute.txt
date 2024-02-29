@@ -1,0 +1,9 @@
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.DataLayer\bin\Debug\Empleado.DataLayer.dll
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.DataLayer\bin\Debug\Empleado.DataLayer.pdb
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.DataLayer\bin\Debug\Empleado.EntityLayer.dll
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.DataLayer\bin\Debug\Empleado.EntityLayer.pdb
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.DataLayer\obj\Debug\Empleado.DataLayer.csproj.AssemblyReference.cache
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.DataLayer\obj\Debug\Empleado.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.DataLayer\obj\Debug\Empleado.325CAB0D.Up2Date
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.DataLayer\obj\Debug\Empleado.DataLayer.dll
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.DataLayer\obj\Debug\Empleado.DataLayer.pdb

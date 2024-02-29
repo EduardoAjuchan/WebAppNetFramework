@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empleado.EntityLayer", "Emp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empleado.DataLayer", "Empleado.DataLayer\Empleado.DataLayer.csproj", "{CB22A758-20DF-431D-A9FC-50A92D47E065}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpleadosBuinessLayer", "EmpleadosBuinessLayer\EmpleadosBuinessLayer.csproj", "{F32C8796-50EE-4693-A298-D6396D21AEA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CB22A758-20DF-431D-A9FC-50A92D47E065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB22A758-20DF-431D-A9FC-50A92D47E065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB22A758-20DF-431D-A9FC-50A92D47E065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F32C8796-50EE-4693-A298-D6396D21AEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F32C8796-50EE-4693-A298-D6396D21AEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F32C8796-50EE-4693-A298-D6396D21AEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F32C8796-50EE-4693-A298-D6396D21AEA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

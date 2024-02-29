@@ -1,0 +1,6 @@
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.EntityLayer\bin\Debug\Empleado.EntityLayer.dll
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.EntityLayer\bin\Debug\Empleado.EntityLayer.pdb
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.EntityLayer\obj\Debug\Empleado.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.EntityLayer\obj\Debug\Empleado.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.EntityLayer\obj\Debug\Empleado.EntityLayer.dll
+C:\Users\eduar\Desktop\API\Empleado WebForm\Empleado.EntityLayer\obj\Debug\Empleado.EntityLayer.pdb
