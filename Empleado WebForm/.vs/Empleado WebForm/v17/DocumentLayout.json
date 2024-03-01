@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB22A758-20DF-431D-A9FC-50A92D47E065}|Empleado.DataLayer\\Empleado.DataLayer.csproj|c:\\users\\eduar\\desktop\\api\\empleado webform\\empleado.datalayer\\empleadodl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB22A758-20DF-431D-A9FC-50A92D47E065}|Empleado.DataLayer\\Empleado.DataLayer.csproj|solutionrelative:empleado.datalayer\\empleadodl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EF128A6-D62F-4C5D-BEEF-0D5B9BB621E8}|Empleado WebForm\\Empleado WebForm.csproj|c:\\users\\eduar\\desktop\\api\\empleado webform\\empleado webform\\contact.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EF128A6-D62F-4C5D-BEEF-0D5B9BB621E8}|Empleado WebForm\\Empleado WebForm.csproj|solutionrelative:empleado webform\\contact.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EA8C91C-FEAA-475C-8BE2-20FED5BC4421}|Empleado.EntityLayer\\Empleado.EntityLayer.csproj|c:\\users\\eduar\\desktop\\api\\empleado webform\\empleado.entitylayer\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EA8C91C-FEAA-475C-8BE2-20FED5BC4421}|Empleado.EntityLayer\\Empleado.EntityLayer.csproj|solutionrelative:empleado.entitylayer\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EF128A6-D62F-4C5D-BEEF-0D5B9BB621E8}|Empleado WebForm\\Empleado WebForm.csproj|c:\\users\\eduar\\desktop\\api\\empleado webform\\empleado webform\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{6EF128A6-D62F-4C5D-BEEF-0D5B9BB621E8}|Empleado WebForm\\Empleado WebForm.csproj|solutionrelative:empleado webform\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{6EF128A6-D62F-4C5D-BEEF-0D5B9BB621E8}|Empleado WebForm\\Empleado WebForm.csproj|c:\\users\\eduar\\desktop\\api\\empleado webform\\empleado webform\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6EF128A6-D62F-4C5D-BEEF-0D5B9BB621E8}|Empleado WebForm\\Empleado WebForm.csproj|solutionrelative:empleado webform\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EF128A6-D62F-4C5D-BEEF-0D5B9BB621E8}|Empleado WebForm\\Empleado WebForm.csproj|c:\\users\\eduar\\desktop\\api\\empleado webform\\empleado webform\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,71 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Contact.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado WebForm\\Contact.aspx.cs",
-              "RelativeDocumentMoniker": "Empleado WebForm\\Contact.aspx.cs",
-              "ToolTip": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado WebForm\\Contact.aspx.cs",
-              "RelativeToolTip": "Empleado WebForm\\Contact.aspx.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAjwE4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T19:49:06.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Default.aspx",
-              "DocumentMoniker": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado WebForm\\Default.aspx",
-              "RelativeDocumentMoniker": "Empleado WebForm\\Default.aspx",
-              "ToolTip": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado WebForm\\Default.aspx",
-              "RelativeToolTip": "Empleado WebForm\\Default.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-02-29T19:27:50.72Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Empleado.cs",
-              "DocumentMoniker": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado.EntityLayer\\Empleado.cs",
-              "RelativeDocumentMoniker": "Empleado.EntityLayer\\Empleado.cs",
-              "ToolTip": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado.EntityLayer\\Empleado.cs",
-              "RelativeToolTip": "Empleado.EntityLayer\\Empleado.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T19:06:15.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmpleadoDL.cs",
-              "DocumentMoniker": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado.DataLayer\\EmpleadoDL.cs",
-              "RelativeDocumentMoniker": "Empleado.DataLayer\\EmpleadoDL.cs",
-              "ToolTip": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado.DataLayer\\EmpleadoDL.cs",
-              "RelativeToolTip": "Empleado.DataLayer\\EmpleadoDL.cs",
-              "ViewState": "AQIAAMoAAAAAAAAAAAAUwLMAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T18:32:28.596Z",
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado WebForm\\Web.config",
+              "RelativeDocumentMoniker": "Empleado WebForm\\Web.config",
+              "ToolTip": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado WebForm\\Web.config",
+              "RelativeToolTip": "Empleado WebForm\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-01T02:24:34.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Default.aspx.cs",
               "DocumentMoniker": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado WebForm\\Default.aspx.cs",
               "RelativeDocumentMoniker": "Empleado WebForm\\Default.aspx.cs",
               "ToolTip": "C:\\Users\\eduar\\Desktop\\API\\Empleado WebForm\\Empleado WebForm\\Default.aspx.cs",
               "RelativeToolTip": "Empleado WebForm\\Default.aspx.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBQAAAAMAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAowEcAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T18:20:33.206Z",
+              "WhenOpened": "2024-03-01T02:23:27.275Z",
               "EditorCaption": ""
             }
           ]

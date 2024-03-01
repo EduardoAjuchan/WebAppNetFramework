@@ -27,7 +27,19 @@ namespace EmpleadosBuinessLayer
             }
         }
 
-        public EmpleadoEntity Obtener(int idEmpleado)
+        public List<EmpleadoEntity> ObtenerEmpleadosPorRangoFechaContratacion(DateTime fechaInicio, DateTime fechaFin)
+        {
+            try
+            {
+                return empleadoDL.ObtenerEmpleadosPorRangoFechaContratacion(fechaInicio, fechaFin);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+    
+    public EmpleadoEntity Obtener(int idEmpleado)
         {
             try
             {
@@ -72,7 +84,7 @@ namespace EmpleadosBuinessLayer
                 throw ex;
             }
         }
-        //agregar aqui el metodo para el reporte
+        
         public bool Eliminar(int idEmpleado)
         {
             try
